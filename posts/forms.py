@@ -1,6 +1,6 @@
 from django import forms
 from .models import Post
-class PostForm(forms.Form):
+class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         # exclude = ('short_link',)
