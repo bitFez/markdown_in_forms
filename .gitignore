@@ -154,3 +154,5 @@ cython_debug/
 
 # Vscode configuration files
 .vscode
+
+staticfiles/

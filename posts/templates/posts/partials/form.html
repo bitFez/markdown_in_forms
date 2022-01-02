@@ -1,11 +1,9 @@
 {% load static %}
 <div>
-    <form method="POST" action="">
-        {% csrf_token %}
+    <form method="POST" action="">{% csrf_token %}
         {{ form }}
         <button type='submit'>Submit</button>
     </form>
-    
     {{ form.media }}
-    
 </div>
+  

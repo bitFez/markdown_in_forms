@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     # imported apps
     'markdownx', # <-- needed for adding markdown to forms
 
-    # my apps
+    # my app
     'posts',
 ]
 
@@ -110,6 +110,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+MARKDOWNX_MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.extra',
+    'markdown.extensions.fenced_code',
+]
 
 
 # Static files (CSS, JavaScript, Images)
