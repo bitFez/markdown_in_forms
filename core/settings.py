@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     # imported apps
     'markdownx', # <-- needed for adding markdown to forms
+    'django.forms',
 
     # my app
     'posts',
@@ -115,7 +116,7 @@ MARKDOWNX_MARKDOWN_EXTENSIONS = [
     'markdown.extensions.extra',
     'markdown.extensions.fenced_code',
 ]
-
+FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
